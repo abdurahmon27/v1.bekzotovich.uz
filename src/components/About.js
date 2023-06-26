@@ -4,32 +4,36 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
+
+//some problem with picture
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
-  const forAboutHref = '#';
+  const forAboutHref = "#";
   return (
     <>
       <section className="section" id="about" ref={ref}>
         <div className="container mx-auto">
           <div className=" flex items-center justify-center max-md:flex-col gap-y-10 lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
             <motion.div
-            variants={fadeIn('right', 0.3)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{once:false, amount: 0.3}}
-            className="flex-1 bg-about  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top">
-              
-            </motion.div>
-            <motion.div 
-            variants={fadeIn('left', 0.5)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{once:false, amount: 0.3}}
-            className="flex-1">
+              variants={fadeIn("right", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.3 }}
+              className="flex-1 bg-about  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            ></motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.3 }}
+              className="flex-1"
+            >
               <h2 className="h2 text-accent lowercase">.about me</h2>
-              <h3 className="h3 mb-4">I'm a Frontend Developer with over 1 year of experience.</h3>
+              <h3 className="h3 mb-4">
+                I'm a Frontend Developer with over 1 year of experience.
+              </h3>
               <p className="mb-6">
                 Lorem ex commodo excepteur occaecat duis elit duis exercitation
                 ipsum reprehenderit exercitation excepteur dolor ut.
