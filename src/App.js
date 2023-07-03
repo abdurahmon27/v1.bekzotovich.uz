@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 // components
-import Banner from "./components/Home";
+import Home from "./components/Home";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import About from "./components/About";
@@ -13,6 +13,7 @@ import { IoSettings } from "react-icons/io5";
 import { Drawer } from "antd";
 import { TfiClose } from "react-icons/tfi";
 import BgChoosing from "./components/data";
+// import Iframe from "react-iframe";
 
 const App = () => {
   const [open, setOpen] = React.useState(false);
@@ -31,23 +32,29 @@ const App = () => {
     color1: "rgba(255, 255, 255, 0.5)",
     color2: "#66BFBF",
     color3: "#676FA3",
-    color4: "#4C4C6D",
+    color4: "#525FE1",
     color5: "#F99417",
     //rgb(47, 46, 52)
   };
+  //background
+  const [background, setBackground] = React.useState("bg4.jpg");
   return (
     <>
       <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
-        <Header />
-        <Banner />
-        <Nav />
+        <Header color={color} borderRadius={borderrad} />
+        <Home borderRadius={borderrad} color={color} />
+        <Nav borderRadius={borderrad} />
         <About />
         <Services />
         <Work />
         <Contact />
-        <div className="z-50 fixed top-10 right-0">
+        <div className="z-50 fixed top-[5rem] right-0">
           <button
-            className="shadow bg-white/10 backdrop-blur-[3px] p-5 rounded-l-full"
+            className="shadow bg-white/10 backdrop-blur-[3px] p-5"
+            style={{
+              color: `${color}`,
+              borderRadius: `${borderrad}px 0 0 ${borderrad}px`,
+            }}
             onClick={showDrawer}
           >
             <IoSettings className="rotate-center" />
@@ -58,9 +65,12 @@ const App = () => {
             open={open}
             style={{ backgroundColor: `rgb(47, 46, 52)`, color: "#fff" }}
             closeIcon={<TfiClose className=" text-[#fff]" />}
-            headerStyle={{ backgroundColor: "rgb(47, 46, 52)" }}
+            headerStyle={{
+              backgroundColor: "rgb(47, 46, 52)",
+              boxShadow: `0 1px 10px rgba(0, 0, 0, 0.5)`,
+            }}
           >
-            <div className="text-[1.5rem] absolute top-[0.65rem] left-[4rem]">
+            <div className="text-[1.5rem] absolute top-[0.4rem] left-[4rem]">
               Settings
             </div>
             <div className="flex items-start justify-center flex-col">
@@ -142,9 +152,11 @@ const App = () => {
                 }}
               ></div>
               <div
-                className={`w-[96px] h-[350px] border shadow-lg mx-5`}
+                className={`w-[96px] h-[250px] border shadow-lg mx-5`}
                 style={{ borderRadius: `${borderrad}px` }}
-              ></div>
+              >
+                
+              </div>
             </div>
             <div className="my-10"></div>
             <div className="flex items-start justify-center flex-col">
@@ -155,7 +167,7 @@ const App = () => {
                   return (
                     <div
                       key={id}
-                      className="w-[70px] h-[70px] bg-black mx-3 my-3 rounded-lg"
+                      className="w-[70px] h-[70px] mx-3 my-3 rounded-lg"
                     >
                       <img
                         alt={id}

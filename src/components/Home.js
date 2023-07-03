@@ -6,14 +6,14 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const Home = () => {
+const Home = (props) => {
   const forHomeHref = {
     gitHub: "https://github.com/abdurahmon27",
     instagram: "https://instagram.com/_abdurakhmon.05",
     linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
-    cv: '#'
+    cv: "#",
   };
- let blank = "_blank";
+  let blank = "_blank";
   return (
     <>
       <section
@@ -38,24 +38,29 @@ const Home = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-\1] bg-white/10 p-3 w-[84%] flex items-center rounded-full"
+                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-\1] bg-white/10 p-3 w-[84%] flex items-center justify-center"
+                  style={{ borderRadius: `${props.borderRadius}px` }}
                 >
                   <pre></pre>
                   <span className="mr-4 text-white text-[25px]">I am a</span>
-                  <TypeAnimation
-                    sequence={[
-                      "Developer",
-                      2000,
-                      "Videographer",
-                      2000,
-                      "Designer",
-                      2000,
-                    ]}
-                    speed={50}
-                    className="text-[25px] lowercase text-accent font-secondary"
-                    wrapper="span"
-                    repeat={Infinity}
-                  />
+                  
+                  <div style={{ color: `${props.color}` }} className="w-auto">
+                    <TypeAnimation
+                      sequence={[
+                        "Developer",
+                        2000,
+                        "Videographer",
+                        2000,
+                        "Designer",
+                        2000,
+                      ]}
+                      speed={50}
+                      className="text-[25px] lowercase text-accent font-secondary"
+                      wrapper="span"
+                      repeat={Infinity}
+                    />
+                  </div>
+                  
                 </motion.div>
               </div>
               <div className="items-center justify-center hidden lg:flex">
@@ -64,10 +69,14 @@ const Home = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center rounded-full"
+                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center"
+                  style={{ borderRadius: `${props.borderRadius}px` }}
                 >
                   <pre>
-                    <span className="text-[25px] text-green-400 font-tortinchi">
+                    <span
+                      className="text-[25px] font-tortinchi"
+                      style={{ color: `${props.color}` }}
+                    >
                       {" "}
                       ${" "}
                     </span>
@@ -75,20 +84,22 @@ const Home = () => {
                   <span className="mr-4 text-white text-[30px] font-tortinchi">
                     I am a
                   </span>
-                  <TypeAnimation
-                    sequence={[
-                      "Developer",
-                      2000,
-                      "Videographer",
-                      2000,
-                      "Designer",
-                      2000,
-                    ]}
-                    speed={50}
-                    className="text-[25px] lowercase text-green-400 font-tortinchi"
-                    wrapper="span"
-                    repeat={Infinity}
-                  />
+                  <div style={{ color: `${props.color}` }}>
+                    <TypeAnimation
+                      sequence={[
+                        "Developer",
+                        2000,
+                        "Videographer",
+                        2000,
+                        "Designer",
+                        2000,
+                      ]}
+                      speed={50}
+                      className="text-[25px] lowercase font-tortinchi"
+                      wrapper="span"
+                      repeat={Infinity}
+                    />
+                  </div>
                 </motion.div>
               </div>
               <motion.p
@@ -108,8 +119,21 @@ const Home = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
-                <button className="btn btn-lg z-[1000]">Contact me</button>
-                <a href={forHomeHref.cv} className="text-gradient btn-link z-[1000]" target={blank} >
+                <button
+                  className="btn btn-lg z-[1000]"
+                  style={{
+                    backgroundColor: `${props.color}`,
+                    borderRadius: `${props.borderRadius}px`,
+                  }}
+                >
+                  Contact me
+                </button>
+                <a
+                  href={forHomeHref.cv}
+                  className="text-gradient btn-link z-[1000]"
+                  target={blank}
+                  style={{ color: `${props.color}` }}
+                >
                   Download CV
                 </a>
               </motion.div>
@@ -137,11 +161,11 @@ const Home = () => {
               whileInView={"show"}
               className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
             >
-                <img
-                  src={Image}
-                  alt="avatar"
-                  className=" h-[320px] mix-blend-lighten lg:max-w-[482px] rounded-full"
-                />
+              <img
+                src={Image}
+                alt="avatar"
+                className=" h-[320px] mix-blend-lighten lg:max-w-[482px] rounded-full"
+              />
             </motion.div>
           </div>
         </div>
