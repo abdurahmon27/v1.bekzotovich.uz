@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../assets/avatar.svg";
+import Image2 from "../assets/avatar.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -32,7 +33,7 @@ const Home = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-\1] bg-white/10 p-3 w-[84%] flex items-center rounded"
+                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-\1] bg-white/10 p-3 w-[84%] flex items-center rounded-full"
                 >
                   <pre></pre>
                   <span className="mr-4 text-white text-[25px]">I am a</span>
@@ -58,10 +59,11 @@ const Home = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center rounded"
+                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center rounded-full"
                 >
                   <pre>
                     <span className="text-[25px] text-green-400 font-tortinchi">
+                      {" "}
                       ${" "}
                     </span>
                   </pre>
@@ -130,7 +132,11 @@ const Home = () => {
               whileInView={"show"}
               className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
             >
-              <img src={Image} alt="avatar" />
+                <img
+                  src={Image}
+                  alt="avatar"
+                  className=" h-[320px] mix-blend-lighten lg:max-w-[482px] rounded-full"
+                />
             </motion.div>
           </div>
         </div>
