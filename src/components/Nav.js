@@ -3,7 +3,7 @@ import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsClipboardData, BsBriefcase, BsChatSquareDots } from "react-icons/bs";
 import { Link } from "react-scroll";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <>
 

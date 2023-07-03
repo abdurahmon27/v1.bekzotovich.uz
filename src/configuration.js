@@ -2,9 +2,9 @@ import React from "react";
 import { IoSettings } from "react-icons/io5";
 import { Drawer } from "antd";
 import {TfiClose} from "react-icons/tfi";
-import  BgChoosing from "../components/data";
+import  BgChoosing from "./components/data";
 
-const Configuration = () => {
+const Configuration = (props) => {
   //drawer
   const [open, setOpen] = React.useState(false);
   const showDrawer = () => {
@@ -14,16 +14,17 @@ const Configuration = () => {
     setOpen(false);
   };
   //input
-  const [borderrad, setBorderrad] = React.useState(100);
+ const [borderrad, setBorderrad] = React.useState(100);
 
   //color palette
   const [color, setColor] = React.useState("rgba(255, 255, 255, 0.5)");
   const colors = {
     color1: "rgba(255, 255, 255, 0.5)",
-    color2: "#606C5D",
+    color2: "#66BFBF",
     color3: "#676FA3",
     color4: "#4C4C6D",
     color5: "#F99417"
+    //rgb(47, 46, 52)
   };
   return (
     <div className="z-50 fixed top-10 right-0">
@@ -33,15 +34,15 @@ const Configuration = () => {
       >
         <IoSettings className="rotate-center" />
       </button>
-      <Drawer placement="right" onClose={onClose} open={open} style={{backgroundColor: 'rgb(47, 46, 52)', color: '#fff'}} closeIcon={<TfiClose className=" text-[#fff]" />} headerStyle={{backgroundColor: 'rgb(47, 46, 52)'}}>
+      <Drawer placement="right" onClose={onClose} open={open} style={{backgroundColor: `rgb(47, 46, 52)`, color: '#fff'}} closeIcon={<TfiClose className=" text-[#fff]" />} headerStyle={{backgroundColor: 'rgb(47, 46, 52)'}}>
         <div className="text-[1.5rem] absolute top-[0.65rem] left-[4rem]">
           Settings
         </div>
         <div  className="flex items-start justify-center flex-col">
           <span className=" text-lg">Color palette:</span>
-          <ul className="flex items-center justify-center my-5">
+          <ul className="grid my-5 grid-cols-3">
             <li
-              className={`w-6 h-6 rounded-full flex items-center justify-center mx-5`}
+              className={`w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3`}
               onClick={() => {
                 setColor(colors.color1);
               }}
@@ -49,25 +50,25 @@ const Configuration = () => {
               <div className={`w-6 h-6 rounded-full`} style={{backgroundColor: `${colors.color1}`}}></div>
             </li>
             <li
-              className=" w-6 h-6 rounded-full flex items-center justify-center mx-5"
+              className=" w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3"
               onClick={() => setColor(colors.color2)}
             >
               <div className={`w-6 h-6 rounded-full`} style={{backgroundColor: `${colors.color2}`}}></div>
             </li>
             <li
-              className=" w-6 h-6 rounded-full flex items-center justify-center mx-5"
+              className=" w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3"
               onClick={() => setColor(colors.color3)}
             >
               <div className={`w-6 h-6 rounded-full`}  style={{backgroundColor: `${colors.color3}`}}></div>
             </li>
             <li
-              className=" w-6 h-6 rounded-full flex items-center justify-center mx-5"
+              className=" w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3"
               onClick={() => setColor(colors.color4)}
             >
               <div className={`w-6 h-6 rounded-full`}  style={{backgroundColor: `${colors.color4}`}}></div>
             </li>
             <li
-              className=" w-6 h-6 rounded-full flex items-center justify-center mx-5"
+              className=" w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3"
               onClick={() => setColor(colors.color5)}
             >
               <div className={`w-6 h-6 rounded-full`}  style={{backgroundColor: `${colors.color5}`}}></div>
@@ -97,7 +98,7 @@ const Configuration = () => {
           ></div>
           <div
             className={`w-[96px] h-[350px] border shadow-lg mx-5`}
-            style={{ borderRadius: `${borderrad}px` }}
+            style={{ borderRadius: `${borderrad}px`,  }}
           ></div>
         </div>
         <div className="my-10"></div>

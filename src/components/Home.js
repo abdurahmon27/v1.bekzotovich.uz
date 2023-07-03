@@ -7,8 +7,13 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Home = () => {
-  const forHomeHref = "#";
-
+  const forHomeHref = {
+    gitHub: "https://github.com/abdurahmon27",
+    instagram: "https://instagram.com/_abdurakhmon.05",
+    linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
+    cv: '#'
+  };
+ let blank = "_blank";
   return (
     <>
       <section
@@ -103,8 +108,8 @@ const Home = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
-                <button className="btn btn-lg">Contact me</button>
-                <a href={forHomeHref} className="text-gradient btn-link">
+                <button className="btn btn-lg z-[1000]">Contact me</button>
+                <a href={forHomeHref.cv} className="text-gradient btn-link z-[1000]" target={blank} >
                   Download CV
                 </a>
               </motion.div>
@@ -115,13 +120,13 @@ const Home = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 pl-[55px] max-md:pl-0"
               >
-                <a href={forHomeHref}>
+                <a href={forHomeHref.gitHub} target={blank}>
                   <FaInstagram />
                 </a>
-                <a href={forHomeHref}>
+                <a href={forHomeHref.instagram} target={blank}>
                   <FaGithub />
                 </a>
-                <a href={forHomeHref}>
+                <a href={forHomeHref.linkedIn} target={blank}>
                   <FaLinkedinIn />
                 </a>
               </motion.div>
