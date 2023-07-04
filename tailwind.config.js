@@ -24,7 +24,7 @@ module.exports = {
         accent: 'rbga(255, 255, 255, 0.5)',
       },
       backgroundImage: {
-        site: "url('./assets/bg4.jpg')",
+        site: "url('./assets/bg2.jpg')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },

@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Raleway&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Raleway&family=Roboto+Condensed&display=swap");
 
 .btn {
   box-shadow: 0px 2px 14px rgba(255, 255, 255, 0.2);
@@ -49,42 +49,42 @@
   }
 }
 
-.range input{
-	-webkit-appearance:none;
-	width:100px;
-	height:4px;
-	border-radius:5px;
-	outline:none;
+.range input {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 4px;
+  border-radius: 5px;
+  outline: none;
 }
-.range input::-webkit-slider-thumb{
-	-webkit-appearance:none;
-	width:20px;
-	height:20px;
-	border-radius:50%;
-	background-color:rgba(255, 255, 255);
+.range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255);
 }
 .rotate-center {
-	-webkit-animation: rotate-center 3s linear infinite both;
-	        animation: rotate-center 3s linear infinite both;
+  -webkit-animation: rotate-center 3s linear infinite both;
+  animation: rotate-center 3s linear infinite both;
 }
 
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

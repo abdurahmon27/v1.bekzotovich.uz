@@ -31,7 +31,7 @@ const App = () => {
   const colors = {
     color1: "rgba(255, 255, 255, 0.5)",
     color2: "#66BFBF",
-    color3: "#676FA3",
+    color3: "#6D9886",
     color4: "#525FE1",
     color5: "#F99417",
     //rgb(47, 46, 52)
