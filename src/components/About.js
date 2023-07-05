@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-
 //some problem with picture
 const About = () => {
   const [ref, inView] = useInView({

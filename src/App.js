@@ -34,10 +34,9 @@ const App = () => {
     color3: "#6D9886",
     color4: "#525FE1",
     color5: "#F99417",
-    //rgb(47, 46, 52)
   };
-  //background
-  const [background, setBackground] = React.useState("bg4.jpg");
+  //background 
+  //const [background, setBackground] = React.useState("bg4.jpg");
   return (
     <>
       <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
@@ -48,6 +47,7 @@ const App = () => {
         <Services />
         <Work />
         <Contact />
+        //configuratsiya
         <div className="z-50 fixed top-[5rem] right-0">
           <button
             className="shadow bg-white/10 backdrop-blur-[3px] p-5"
@@ -64,6 +64,7 @@ const App = () => {
             onClose={onClose}
             open={open}
             style={{ backgroundColor: `rgb(47, 46, 52)`, color: "#fff" }}
+            
             closeIcon={<TfiClose className=" text-[#fff]" />}
             headerStyle={{
               backgroundColor: "rgb(47, 46, 52)",
@@ -181,7 +182,7 @@ const App = () => {
             </div>
           </Drawer>
         </div>
-        <div className="h-[4000px]"></div>
+        <div className="h-[1000px]"></div>
       </div>
     </>
   );
