@@ -36,7 +36,7 @@ const Services = (props) => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-normal rounded-md p-10 mr-5 mb-12 lg:mb-0"
+              className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-normal rounded-xl p-10 mr-5 mb-12 lg:mb-0"
             >
               <h2 className="h2 mb-6" style={{ color: `${props.color}` }}>
                 What I Do.{" "}
@@ -79,7 +79,7 @@ const Services = (props) => {
                           {description}
                         </p>
                       </div>
-                      <div className="flex flex-col flex-1 items-end">
+                      <div className="flex flex-col flex-1 items-start justify-center">
                         <a
                           href={linkForA}
                           className="btn w-9 h-9 mb-[42px] flex justify-center items-center"

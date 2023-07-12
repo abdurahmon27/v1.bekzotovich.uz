@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Raleway',
-      secondary: 'Fira Sans',
-      tertiary: 'Lato',
+      secondary: 'Quicksand',
+      tertiary: 'Agdasima',
       tortinchi: 'Cascadia Code',
     },
     container: {
@@ -24,7 +24,7 @@ module.exports = {
         accent: 'rbga(255, 255, 255, 0.5)',
       },
       backgroundImage: {
-        site: "url('./assets/bg5.jpg')",
+        site: "url('./assets/bg2.jpg')",
         about: "url('./assets/about.png')",
         services: "url('./assets/laptop3.jpg')",
       },

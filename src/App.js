@@ -181,7 +181,6 @@ const App = () => {
             </div>
           </Drawer>
         </div>
-        <div className="h-[1000px]"></div>
       </div>
     </>
   );
