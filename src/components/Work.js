@@ -29,7 +29,7 @@ const Work = (props) => {
                 consectetur minim qui pariatur culpa veniam.
               </p>
               <button
-                className="btn btn-sm"
+                className="btn btn-sm z-50"
                 style={{
                   backgroundColor: `${props.color}`,
                   borderRadius: `${props.borderRadius}px`,
@@ -42,18 +42,18 @@ const Work = (props) => {
               className="group relative overflow-hidden border-2 rounded-md"
               style={{ border: `1px solid ${props.color}` }}
             >
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute lg:z-50 transition-all duration-300"></div>
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="lg:group-hover:scale-125 transition-all duration-500"
                 src={Image1}
                 alt=" "
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 lg:z-50">
                 <span style={{ color: `${props.color}` }}>
                   Frontend Development
                 </span>
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 lg:z-50">
                 <span className="text-3x1 text-white">Jizzax Guide</span>
               </div>
             </div>
@@ -69,18 +69,18 @@ const Work = (props) => {
               className="group relative overflow-hidden border-2 rounded-md"
               style={{ border: `1px solid ${props.color}` }}
             >
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute lg:z-50 transition-all duration-300"></div>
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="lg:group-hover:scale-125 transition-all duration-500"
                 src={Image2}
                 alt=" "
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 lg:z-50">
                 <span style={{ color: `${props.color}` }}>
                   Frontend Development
                 </span>
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 lg:z-50">
                 <span className="text-3x1 text-white">Jizzax Guide</span>
               </div>
             </div>
@@ -88,18 +88,18 @@ const Work = (props) => {
               className="group relative overflow-hidden border-2 rounded-md"
               style={{ border: `1px solid ${props.color}` }}
             >
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute lg:z-50 transition-all duration-300"></div>
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="lg:group-hover:scale-125 transition-all duration-500"
                 src={Image3}
                 alt=" "
               />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 lg:z-50">
                 <span style={{ color: `${props.color}` }}>
                   Frontend Development
                 </span>
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 lg:z-50">
                 <span className="text-3x1 text-white">Jizzax Guide</span>
               </div>
             </div>

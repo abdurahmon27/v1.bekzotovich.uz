@@ -45,7 +45,7 @@ const Services = (props) => {
                 I'm a Frontend Developer with over 1 year of experience.
               </h3>
               <button
-                className="btn btn-sm"
+                className="btn btn-sm z-50"
                 style={{
                   backgroundColor: `${props.color}`,
                   borderRadius: `${props.borderRadius}px`,
@@ -82,7 +82,7 @@ const Services = (props) => {
                       <div className="flex flex-col flex-1 items-start justify-center">
                         <a
                           href={linkForA}
-                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center z-50"
                           style={{
                             backgroundColor: `${props.color}`,
                             borderRadius: `${props.borderRadius}px`,
@@ -93,7 +93,7 @@ const Services = (props) => {
                         <a
                           href={linkForA}
                           style={{ color: `${props.color}` }}
-                          className="text-sm"
+                          className="text-sm z-50"
                         >
                           {link}
                         </a>

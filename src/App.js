@@ -11,8 +11,13 @@ import Contact from "./components/Contact";
 import { IoSettings } from "react-icons/io5";
 import { Drawer } from "antd";
 import { TfiClose } from "react-icons/tfi";
-import BgChoosing from "./components/data";
-// import Iframe from "react-iframe";
+
+//images
+import Image1 from "./assets/bg2.jpg";
+import Image2 from "./assets/bg1.jpg";
+import Image3 from "./assets/bg3.jpg";
+import Image4 from "./assets/bg4.jpg";
+import Image5 from "./assets/bg5.jpg";
 
 const App = () => {
   const [open, setOpen] = React.useState(false);
@@ -34,18 +39,36 @@ const App = () => {
     color4: "#525FE1",
     color5: "#F99417",
   };
-  //background 
-  //const [background, setBackground] = React.useState("bg4.jpg");
+  //background
+  const [background, setBackground] = React.useState(Image1);
+  const setBg1 = () => {
+    setBackground(Image1);
+  }
+  const setBg2 = () => {
+    setBackground(Image2);
+  }
+  const setBg3 = () => {
+    setBackground(Image3);
+  }
+  const setBg4 = () => {
+    setBackground(Image4);
+  }
+  const setBg5 = () => {
+    setBackground(Image5);
+  }
   return (
     <>
-      <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
+      <div
+        className={`bg-no-repeat bg-cover overflow-hidden `}
+        style={{ backgroundImage: `url(${background})` }}
+      >
         <Header color={color} borderRadius={borderrad} />
         <Home borderRadius={borderrad} color={color} />
         <Nav borderRadius={borderrad} color={color} />
-        <About  borderRadius={borderrad} color={color} />
-        <Services  borderRadius={borderrad} color={color}  />
+        <About borderRadius={borderrad} color={color} />
+        <Services borderRadius={borderrad} color={color} />
         <Work borderRadius={borderrad} color={color} />
-        <Contact  borderRadius={borderrad} color={color} />
+        <Contact borderRadius={borderrad} color={color} />
         {/* Configuration // settings */}
         <div className="z-50 fixed top-[5rem] right-0">
           <button
@@ -63,7 +86,6 @@ const App = () => {
             onClose={onClose}
             open={open}
             style={{ backgroundColor: `rgb(47, 46, 52)`, color: "#fff" }}
-            
             closeIcon={<TfiClose className=" text-[#fff]" />}
             headerStyle={{
               backgroundColor: "rgb(47, 46, 52)",
@@ -151,32 +173,53 @@ const App = () => {
                   backgroundColor: `${color}`,
                 }}
               ></div>
-              <div
-                className={`w-[96px] h-[250px] border shadow-lg mx-5`}
-                style={{ borderRadius: `${borderrad}px` }}
-              >
-                
-              </div>
             </div>
-            <div className="my-10"></div>
+            <div className="my-5"></div>
             <div className="flex items-start justify-center flex-col">
               <span className="text-lg">Set background:</span>
               <div className="grid grid-cols-3 md:grid-cols-3">
-                {BgChoosing.map((choosen) => {
-                  const { id, image } = choosen;
-                  return (
-                    <div
-                      key={id}
-                      className="w-[70px] h-[70px] mx-3 my-3 rounded-lg"
-                    >
-                      <img
-                        alt={id}
-                        src={image}
-                        className=" object-cover h-full w-full rounded-lg"
-                      />
-                    </div>
-                  );
-                })}
+                <div
+                  className="w-[70px] h-[70px] mx-3 my-3 rounded-lg"
+                >
+                  <img
+                    src={Image1}
+                    alt=""
+                    className=" object-cover w-[70px] h-[70px] rounded-2xl cursor-pointer "
+                    onClick={setBg1}
+                  />
+                </div>
+                <div className="w-[70px] h-[70px] mx-3 my-3 rounded-lg">
+                  <img
+                    src={Image2}
+                    alt=""
+                    className=" object-cover w-[70px] h-[70px] rounded-2xl cursor-pointer"
+                    onClick={setBg2}
+                  />
+                </div>
+                <div className="w-[70px] h-[70px] mx-3 my-3 rounded-lg">
+                  <img
+                    src={Image3}
+                    alt=""
+                    className=" object-cover w-[70px] h-[70px] rounded-2xl cursor-pointer "
+                    onClick={setBg3}
+                  />
+                </div>
+                <div className="w-[70px] h-[70px] mx-3 my-3 rounded-lg">
+                  <img
+                    src={Image4}
+                    alt=""
+                    className=" object-cover w-[70px] h-[70px] rounded-2xl cursor-pointer "
+                    onClick={setBg4}
+                  />
+                </div>
+                <div className="w-[70px] h-[70px] mx-3 my-3 rounded-lg">
+                  <img
+                    src={Image5}
+                    alt=""
+                    className=" object-cover w-[70px] h-[70px] rounded-2xl cursor-pointer "
+                    onClick={setBg5}
+                  />
+                </div>
               </div>
             </div>
           </Drawer>

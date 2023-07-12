@@ -62,7 +62,7 @@ const About = (props) => {
                 </div>
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
-                    {inView ? <CountUp start={0} end={0} duration={2} /> : null}
+                    {inView ? <CountUp start={0} end={1} duration={2} /> : null}
                     +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
@@ -72,11 +72,11 @@ const About = (props) => {
                 </div>
               </div>
               <div className="flex gap-x-8 items-center">
-                <button className="btn btn-lg"
+                <button className="btn btn-lg z-50"
                 style={{ backgroundColor: `${props.color}`, borderRadius: `${props.borderRadius}px` }}
 
                 >Contact me</button>
-                <a href={forAboutHref} className="text-gradient btn-lnk"  style={{ color: `${props.color}` }}>
+                <a href={forAboutHref} className="text-gradient btn-lnk z-50"  style={{ color: `${props.color}` }}>
                   Downlad CV
                 </a>
               </div>
