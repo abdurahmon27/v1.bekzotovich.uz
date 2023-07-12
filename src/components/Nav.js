@@ -7,7 +7,7 @@ const Nav = (props) => {
   return (
     <>
 
-      <nav className='fixed lg:left-2 w-full top-1/2 -translate-y-1/2 overflow-hidden z-50 max-md:fixed max-md:bottom-8 max-md:w-full max-md:overflow-hidden max-md:z-50 max-md:top-[auto] max-md:-translate-y-0'>
+      <nav className='fixed lg:left-2 w-full top-1/2 -translate-y-1/2 overflow-hidden z-[100] max-md:fixed max-md:bottom-8 max-md:w-full max-md:overflow-hidden max-md:z-[100] max-md:top-[auto] max-md:-translate-y-0'>
         <div className="cantainer mx-auto">
           <div className='w-[96px] shadow bg-white/10 backdrop-blur-[3px] h-[460px] px-5 py-5 flex flex-col justify-between items-center max-md:flex-row text-2x1 text-white/60 max-md:w-full max-md:h-[96px] max-md:max-w-[460px] max-md:mx-auto ' style={{borderRadius: `${props.borderRadius}px`}}>
             <Link to='home' offset={-200} activeClass="active" smooth={true} spy={true} className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
