@@ -20,7 +20,7 @@ const About = (props) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.3 }}
-              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[640px] mix-blend-lighten lg:bg-top"
+              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[640px] mix-blend-lighten lg:bg-top max-lg:hidden"
             ></motion.div>
             <motion.div
               variants={fadeIn("left", 0.5)}
@@ -29,7 +29,7 @@ const About = (props) => {
               viewport={{ once: false, amount: 0.3 }}
               className="flex-1"
             >
-              <h2 className="h2 text-accent lowercase">.about me</h2>
+              <h2 className="h2" style={{color: `${props.color}`}}>ABOUT ME.</h2>
               <h3 className="h3 mb-4">
                 I'm a Frontend Developer with over 1 year of experience.
               </h3>

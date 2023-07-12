@@ -7,7 +7,6 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-// import Configuration from "./configuration";
 //configuration
 import { IoSettings } from "react-icons/io5";
 import { Drawer } from "antd";
@@ -47,7 +46,7 @@ const App = () => {
         <Services  borderRadius={borderrad} color={color}  />
         <Work borderRadius={borderrad} color={color} />
         <Contact  borderRadius={borderrad} color={color} />
-        //configuratsiya
+        {/* Configuration // settings */}
         <div className="z-50 fixed top-[5rem] right-0">
           <button
             className="shadow bg-white/10 backdrop-blur-[3px] p-5"
