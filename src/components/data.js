@@ -35,3 +35,17 @@ const BgChoosing = [
 
 export default BgChoosing;
 
+
+
+
+
+
+
+
+
+
+
+
+
+// https://noodlemagazine.com/watch/-34655362_456256830
+// https://noodlemagazine.com/watch/-165330904_456240461

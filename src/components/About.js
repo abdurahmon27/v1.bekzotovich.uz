@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 //some problem with picture
-const About = () => {
+const About = (props) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
@@ -20,7 +20,7 @@ const About = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.3 }}
-              className="flex-1 bg-about  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[640px] mix-blend-lighten lg:bg-top"
             ></motion.div>
             <motion.div
               variants={fadeIn("left", 0.5)}
@@ -41,6 +41,7 @@ const About = () => {
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
                     {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                    +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
                     Years of <br />
@@ -52,6 +53,7 @@ const About = () => {
                     {inView ? (
                       <CountUp start={0} end={32} duration={4} />
                     ) : null}
+                    +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
                     Projects <br />
@@ -61,6 +63,7 @@ const About = () => {
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
                     {inView ? <CountUp start={0} end={0} duration={2} /> : null}
+                    +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
                     Satisfied <br />
@@ -69,8 +72,11 @@ const About = () => {
                 </div>
               </div>
               <div className="flex gap-x-8 items-center">
-                <button className="btn btn-lg">Contact me</button>
-                <a href={forAboutHref} className="text-gradient btn-lnk">
+                <button className="btn btn-lg"
+                style={{ backgroundColor: `${props.color}`, borderRadius: `${props.borderRadius}px` }}
+
+                >Contact me</button>
+                <a href={forAboutHref} className="text-gradient btn-lnk"  style={{ color: `${props.color}` }}>
                   Downlad CV
                 </a>
               </div>

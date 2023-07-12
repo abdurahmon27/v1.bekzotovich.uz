@@ -42,11 +42,11 @@ const App = () => {
       <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
         <Header color={color} borderRadius={borderrad} />
         <Home borderRadius={borderrad} color={color} />
-        <Nav borderRadius={borderrad} />
-        <About />
-        <Services />
-        <Work />
-        <Contact />
+        <Nav borderRadius={borderrad} color={color} />
+        <About  borderRadius={borderrad} color={color} />
+        <Services  borderRadius={borderrad} color={color}  />
+        <Work borderRadius={borderrad} color={color} />
+        <Contact  borderRadius={borderrad} color={color} />
         //configuratsiya
         <div className="z-50 fixed top-[5rem] right-0">
           <button
@@ -107,7 +107,7 @@ const App = () => {
                   ></div>
                 </li>
                 <li
-                  className=" w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3"
+                  className={`w-8 h-8 rounded-full flex items-center justify-center mx-5 p-1 my-3`}
                   onClick={() => setColor(colors.color4)}
                 >
                   <div
