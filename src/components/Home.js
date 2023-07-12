@@ -8,10 +8,11 @@ import { fadeIn } from "../variants";
 
 const Home = (props) => {
   const forHomeHref = {
-    gitHub: "https://instagram.com/_abdurakhmon.05",
+    gitHub: "https://instagram.com/_abdurakhmon._27",
     instagram: "https://github.com/abdurahmon27",
     linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
     cv: "#",
+    
   };
   let blank = "_blank";
   return (

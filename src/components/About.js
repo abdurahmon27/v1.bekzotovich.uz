@@ -10,6 +10,7 @@ const About = (props) => {
     threshold: 0.5,
   });
   const forAboutHref = "#";
+  const channelLink = "https://t.me/abdurahmon_mamadiyorov";
   return (
     <>
       <section className="section" id="about" ref={ref}>
@@ -34,8 +35,9 @@ const About = (props) => {
                 I'm a Frontend Developer with over 1 year of experience.
               </h3>
               <p className="mb-6">
-                Lorem ex commodo excepteur occaecat duis elit duis exercitation
-                ipsum reprehenderit exercitation excepteur dolor ut.
+                <a href={channelLink}>
+                t.me/abdurahmon_mamadiyorov for daily posts.
+                </a>
               </p>
               <div className="flex gap-x-6 lg:gap-x-10 mb-12">
                 <div>
