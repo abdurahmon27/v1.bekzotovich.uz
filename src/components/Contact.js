@@ -65,14 +65,14 @@ const Contact = (props) => {
             onSubmit={sendEmail}
           >
             <input
-              className=" bg-transparent py-3 outline-none w-full placeholder:text-white transition-all"
-              style={{ borderBottom: `1px solid ${props.color}` }}
+              className=" bg-transparent py-3 outline-none w-full placeholder:text-white transition-all px-3 rounded-md"
+              style={{ borderBottom: `1px solid ${props.color}`}}
               type="name"
               placeholder="Your name"
               name="user_name"
             />
             <input
-              className=" bg-transparent py-3 outline-none w-full placeholder:text-white transition-all"
+              className=" bg-transparent py-3 outline-none w-full placeholder:text-white transition-all px-3 rounded-md"
               style={{ borderBottom: `1px solid ${props.color}` }}
               type="email"
               placeholder="Your email"
