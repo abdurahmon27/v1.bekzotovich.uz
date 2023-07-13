@@ -3,7 +3,6 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll";
 
 //some problem with picture
 const About = (props) => {
@@ -84,14 +83,11 @@ const About = (props) => {
                     borderRadius: `${props.borderRadius}px`,
                   }}
                 >
-                  <Link
-                    to="contact"
-                    smooth={true}
-                    spy={true}
-                    activeClass="not-active"
+                  <a
+                    href={`https://blog.bekzotovich.uz/`}
                   >
-                    Contact me
-                  </Link>
+                     Blogs
+                  </a>
                 </button>
                 <a
                   href={forAboutHref}
