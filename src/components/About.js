@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 //some problem with picture
 const About = (props) => {
@@ -30,13 +31,15 @@ const About = (props) => {
               viewport={{ once: false, amount: 0.3 }}
               className="flex-1"
             >
-              <h2 className="h2" style={{color: `${props.color}`}}>ABOUT ME.</h2>
+              <h2 className="h2" style={{ color: `${props.color}` }}>
+                ABOUT ME.
+              </h2>
               <h3 className="h3 mb-4">
                 I'm a Frontend Developer with over 1 year of experience.
               </h3>
               <p className="mb-6">
                 <a href={channelLink}>
-                t.me/abdurahmon_mamadiyorov for daily posts.
+                  t.me/abdurahmon_mamadiyorov for daily posts.
                 </a>
               </p>
               <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -74,11 +77,27 @@ const About = (props) => {
                 </div>
               </div>
               <div className="flex gap-x-8 items-center">
-                <button className="btn btn-lg z-50"
-                style={{ backgroundColor: `${props.color}`, borderRadius: `${props.borderRadius}px` }}
-
-                >Contact me</button>
-                <a href={forAboutHref} className="text-gradient btn-lnk z-50"  style={{ color: `${props.color}` }}>
+                <button
+                  className="btn btn-lg z-50"
+                  style={{
+                    backgroundColor: `${props.color}`,
+                    borderRadius: `${props.borderRadius}px`,
+                  }}
+                >
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    spy={true}
+                    activeClass="not-active"
+                  >
+                    Contact me
+                  </Link>
+                </button>
+                <a
+                  href={forAboutHref}
+                  className="text-gradient btn-lnk z-50"
+                  style={{ color: `${props.color}` }}
+                >
                   Downlad CV
                 </a>
               </div>
