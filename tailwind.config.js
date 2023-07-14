@@ -5,7 +5,7 @@ module.exports = {
       primary: 'Raleway',
       secondary: 'Quicksand',
       tertiary: 'Agdasima',
-      tortinchi: 'Cascadia Code',
+      tortinchi: 'Press Start 2P',
     },
     container: {
       padding: {

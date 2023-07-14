@@ -43,7 +43,7 @@ const Home = (props) => {
                   style={{ borderRadius: `${props.borderRadius}px` }}
                 >
                   <pre></pre>
-                  <span className="mr-4 text-white text-[25px]">I am a</span>
+                  <span className="mr-4 text-white text-[30px] font-four">I am a</span>
                   
                   <div style={{ color: `${props.color}` }} className="w-auto">
                     <TypeAnimation
@@ -56,7 +56,7 @@ const Home = (props) => {
                         2000,
                       ]}
                       speed={50}
-                      className="text-[25px] lowercase text-accent font-secondary"
+                      className="text-[25px] lowercase font-four"
                       wrapper="span"
                       repeat={Infinity}
                     />
@@ -75,14 +75,14 @@ const Home = (props) => {
                 >
                   <pre>
                     <span
-                      className="text-[25px] font-tortinchi"
+                      className="text-[25px] font-four"
                       style={{ color: `${props.color}` }}
                     >
                       {" "}
                       ${" "}
                     </span>
                   </pre>
-                  <span className="mr-4 text-white text-[30px] font-tortinchi">
+                  <span className="mr-4 text-white text-[30px] font-four">
                     I am a
                   </span>
                   <div style={{ color: `${props.color}` }}>
@@ -96,7 +96,7 @@ const Home = (props) => {
                         2000,
                       ]}
                       speed={50}
-                      className="text-[25px] lowercase font-tortinchi"
+                      className="text-[25px] lowercase font-four"
                       wrapper="span"
                       repeat={Infinity}
                     />
