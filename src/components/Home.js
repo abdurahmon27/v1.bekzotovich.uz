@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/avatar.svg";
+import Image from "../assets/avatar4.jpg";
 //import Image2 from "../assets/avatar.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
@@ -108,10 +108,9 @@ const Home = (props) => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0"
+                className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0 z-[10000]"
               >
-                Amet exercitation ea minim cupidatat.Aute deserunt aliqua quis
-                elit aliquip aute.
+                The site is not ready yet. Some pages are under construction. The <a href="http://blog.bekzotovich.uz/" className="font-bold">blog page</a> is also working now
               </motion.p>
               <motion.div
                 variants={fadeIn("up", 0.6)}
@@ -160,12 +159,13 @@ const Home = (props) => {
               variants={fadeIn("left", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              className=" hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
+              className=" hidden lg:flex flex-1 max-w-[320px] h-[320px] lg:max-w-[482px]"
             >
               <img
+              title="image will replace"
                 src={Image}
                 alt="avatar"
-                className=" h-[320px] mix-blend-lighten lg:max-w-[482px] rounded-full"
+                className=" h-[320px] lg:max-w-[320px] w-[320px] rounded-full object-cover z-[100]"
               />
             </motion.div>
           </div>
