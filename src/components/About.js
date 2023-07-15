@@ -66,7 +66,7 @@ const About = (props) => {
                 </div>
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
-                    {inView ? <CountUp start={0} end={1} duration={2} /> : null}
+                    {inView ? <CountUp start={0} end={9} duration={4} /> : null}
                     +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">

@@ -108,7 +108,7 @@ const Home = (props) => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0 z-[10000]"
+                className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
                 The site is not ready yet. Some pages are under construction. The <a href="http://blog.bekzotovich.uz/" className="font-bold">blog page</a> is also working now
               </motion.p>
@@ -120,7 +120,7 @@ const Home = (props) => {
                 className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
                 <button
-                  className="btn btn-lg z-[1000]"
+                  className="btn btn-lg"
                   style={{
                     backgroundColor: `${props.color}`,
                     borderRadius: `${props.borderRadius}px`,
@@ -130,7 +130,7 @@ const Home = (props) => {
                 </button>
                 <a
                   href={forHomeHref.cv}
-                  className="text-gradient btn-link z-[1000]"
+                  className="text-gradient btn-link"
                   target={blank}
                   style={{ color: `${props.color}` }}
                 >
