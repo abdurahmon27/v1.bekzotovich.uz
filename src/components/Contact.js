@@ -59,7 +59,7 @@ const Contact = (props) => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:z-50 rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 btn lg:z-50 rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
             style={{ border: `1px solid ${props.color}` }}
             ref={form}
             onSubmit={sendEmail}

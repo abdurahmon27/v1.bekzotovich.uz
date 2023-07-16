@@ -39,7 +39,7 @@ const Home = (props) => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-\1] bg-white/10 p-3 w-[84%] flex items-center justify-center"
+                  className="mb-6 text-[36px] btn lg:text-[30px] font-secondary font-semibold leading-[-\1] bg-white/10 p-3 w-[84%] flex items-center justify-center"
                   style={{ borderRadius: `${props.borderRadius}px` }}
                 >
                   <pre></pre>
@@ -70,7 +70,7 @@ const Home = (props) => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center"
+                  className="mb-6 text-[36px] btn lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center"
                   style={{ borderRadius: `${props.borderRadius}px` }}
                 >
                   <pre>

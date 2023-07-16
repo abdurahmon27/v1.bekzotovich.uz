@@ -39,7 +39,7 @@ const Work = (props) => {
               </button>
             </div>
             <div
-              className="group relative overflow-hidden border-2 rounded-md"
+              className="group relative overflow-hidden border-2 rounded-md btn"
               style={{ border: `1px solid ${props.color}` }}
             >
               <div className="group-hover:bg-black/70 w-full h-full absolute lg:z-50 transition-all duration-300"></div>
@@ -66,7 +66,7 @@ const Work = (props) => {
             className="flex-1 flex flex-col gap-y-10"
           >
             <div
-              className="group relative overflow-hidden border-2 rounded-md"
+              className="group relative overflow-hidden border-2 rounded-md btn"
               style={{ border: `1px solid ${props.color}` }}
             >
               <div className="group-hover:bg-black/70 w-full h-full absolute lg:z-50 transition-all duration-300"></div>
@@ -85,7 +85,7 @@ const Work = (props) => {
               </div>
             </div>
             <div
-              className="group relative overflow-hidden border-2 rounded-md"
+              className="group relative overflow-hidden border-2 rounded-md btn"
               style={{ border: `1px solid ${props.color}` }}
             >
               <div className="group-hover:bg-black/70 w-full h-full absolute lg:z-50 transition-all duration-300"></div>
