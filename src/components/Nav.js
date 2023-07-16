@@ -2,7 +2,6 @@ import React from "react";
 import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsClipboardData, BsBriefcase, BsChatSquareDots } from "react-icons/bs";
 import { Link } from "react-scroll";
-
 const Nav = (props) => {
   return (
     <>
@@ -13,7 +12,7 @@ const Nav = (props) => {
         >
           <Link
             to="home"
-            offset={-200}
+            offset={-150}
             activeClass="active"
             smooth={true}
             spy={true}
@@ -26,6 +25,7 @@ const Nav = (props) => {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={-5}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BiUser />
@@ -35,6 +35,7 @@ const Nav = (props) => {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={7}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsClipboardData />
@@ -44,6 +45,7 @@ const Nav = (props) => {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={14}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
@@ -53,6 +55,7 @@ const Nav = (props) => {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={30}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsChatSquareDots />

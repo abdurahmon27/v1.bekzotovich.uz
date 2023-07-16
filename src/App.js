@@ -18,6 +18,7 @@ import Image2 from "./assets/bg1.jpg";
 import Image3 from "./assets/bg3.jpg";
 import Image4 from "./assets/bg4.jpg";
 import Image5 from "./assets/bg5.jpg";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -88,6 +89,7 @@ const App = () => {
           <Services borderRadius={borderrad} color={color} />
           <Work borderRadius={borderrad} color={color} />
           <Contact borderRadius={borderrad} color={color} />
+          <Footer />
           {/* Configuration // settings */}
           <div className="z-50 fixed top-[5rem] right-0">
             <button

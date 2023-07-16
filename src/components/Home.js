@@ -5,6 +5,7 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const Home = (props) => {
   const forHomeHref = {
@@ -12,7 +13,6 @@ const Home = (props) => {
     instagram: "https://github.com/abdurahmon27",
     linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
     cv: "https://blog.bekzotovich.uz/",
-    
   };
   let blank = "_blank";
   return (
@@ -43,8 +43,10 @@ const Home = (props) => {
                   style={{ borderRadius: `${props.borderRadius}px` }}
                 >
                   <pre></pre>
-                  <span className="mr-4 text-white text-[30px] font-four">I am a</span>
-                  
+                  <span className="mr-4 text-white text-[30px] font-four">
+                    I am a
+                  </span>
+
                   <div style={{ color: `${props.color}` }} className="w-auto">
                     <TypeAnimation
                       sequence={[
@@ -61,7 +63,6 @@ const Home = (props) => {
                       repeat={Infinity}
                     />
                   </div>
-                  
                 </motion.div>
               </div>
               <div className="items-center justify-center hidden lg:flex">
@@ -110,7 +111,12 @@ const Home = (props) => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
-                The site is not ready yet. Some pages are under construction. The <a href="http://blog.bekzotovich.uz/" className="font-bold">blog page</a> is also working now
+                The site is not ready yet. Some pages are under construction.
+                The{" "}
+                <a href="http://blog.bekzotovich.uz/" className="font-bold">
+                  blog page
+                </a>{" "}
+                is also working now
               </motion.p>
               <motion.div
                 variants={fadeIn("up", 0.6)}
@@ -126,7 +132,14 @@ const Home = (props) => {
                     borderRadius: `${props.borderRadius}px`,
                   }}
                 >
-                  Contact me
+                  <Link
+                    to="contact"
+                    activeClass="notactive"
+                    smooth={true}
+                    spy={true}
+                  >
+                    Contact me
+                  </Link>
                 </button>
                 <a
                   href={forHomeHref.cv}
@@ -162,7 +175,7 @@ const Home = (props) => {
               className=" hidden lg:flex flex-1 max-w-[320px] h-[320px] lg:max-w-[482px]"
             >
               <img
-              title="image will replace"
+                title="image will replace"
                 src={Image}
                 alt="avatar"
                 className=" h-[320px] lg:max-w-[320px] w-[320px] rounded-full object-cover z-[100]"
