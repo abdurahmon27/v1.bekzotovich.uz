@@ -24,9 +24,10 @@ const Work = (props) => {
               >
                 My Latest <br /> Work.
               </h2>
-              <p className="max-w-sm mb-16">
-                Id voluptate pariatur cillum aliqua enim consectetur non ut
-                consectetur minim qui pariatur culpa veniam.
+              <p className="max-w-sm mb-16 text-[15px]">
+                Currently I am working on 3 big projects. I did not put them in
+                the portfolio for privacy.
+                Soon, InshaAllah, I will make a projects page for my portfolio.
               </p>
               <button
                 className="btn btn-sm z-50"

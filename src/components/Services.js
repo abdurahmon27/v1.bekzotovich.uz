@@ -7,19 +7,19 @@ const services = [
   {
     name: "Frontend Development",
     description:
-      "Ipsum commodo proident excepteur quis minim ipsum sint eiusmod magna.",
+      "In the frontend, I use JavaScript with the ReactJs library. As for CSS, I'm currently using TailwindCSS",
     link: "Learn more",
   },
   {
-    name: "UI/UX Design",
+    name: "Software Engineering",
     description:
-      "Ipsum commodo proident excepteur quis minim ipsum sint eiusmod magna.",
+      "I am studying software engineering at ITPU. I am currently working for a junior degree.",
     link: "Learn more",
   },
   {
     name: "Videographing",
     description:
-      "Ipsum commodo proident excepteur quis minim ipsum sint eiusmod magna.",
+      "I have 5 years of experience in videography. I have satisfied about 300 clients in videography.",
     link: "Learn more",
   },
 ];

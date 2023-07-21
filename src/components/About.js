@@ -3,13 +3,14 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import resume from "../assets/resume.pdf";
 
 //some problem with picture
 const About = (props) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
-  const forAboutHref = "#";
+  const cv = resume;
   const channelLink = "https://t.me/abdurahmon_mamadiyorov";
   return (
     <>
@@ -37,9 +38,12 @@ const About = (props) => {
                 I'm a Frontend Developer with over 1 year of experience.
               </h3>
               <p className="mb-6">
-                <a href={channelLink}>
-                  t.me/abdurahmon_mamadiyorov for daily posts.
-                </a>
+                <span>
+                  <a href={channelLink}>
+                    <b>t.me/abdurahmon_mamadiyorov</b> for daily posts.
+                  </a>
+                  {`Currently, I am a student at ITPU (IT Park University), which was opened together with IT Park and EPAM`}
+                </span>
               </p>
               <div className="flex gap-x-6 lg:gap-x-10 mb-12">
                 <div>
@@ -66,7 +70,9 @@ const About = (props) => {
                 </div>
                 <div>
                   <div className="text-[40px] font-tertiary text-gradient mb-2">
-                    {inView ? <CountUp start={0} end={9} duration={4} /> : null}
+                    {inView ? (
+                      <CountUp start={0} end={15} duration={4} />
+                    ) : null}
                     +
                   </div>
                   <div className="font-primary text-sm tracking-[2px]">
@@ -83,14 +89,11 @@ const About = (props) => {
                     borderRadius: `${props.borderRadius}px`,
                   }}
                 >
-                  <a
-                    href={`https://blog.bekzotovich.uz/`}
-                  >
-                     Blogs
-                  </a>
+                  <a href={`https://blog.bekzotovich.uz/`}>Blogs</a>
                 </button>
                 <a
-                  href={forAboutHref}
+                  href={cv}
+                  download={cv}
                   className="text-gradient btn-lnk z-50"
                   style={{ color: `${props.color}` }}
                 >

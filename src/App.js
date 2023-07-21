@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-// components
+//Components
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
@@ -7,12 +7,11 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-//configuration
+//Configuration
 import { IoSettings } from "react-icons/io5";
 import { Drawer } from "antd";
 import { TfiClose } from "react-icons/tfi";
-
-//images
+//Images
 import Image1 from "./assets/bg2.jpg";
 import Image2 from "./assets/bg1.jpg";
 import Image3 from "./assets/bg3.jpg";
