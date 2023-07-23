@@ -7,7 +7,7 @@ const Nav = (props) => {
     <>
       <nav className="fixed lg:left-2 w-auto top-1/2 -translate-y-1/2 overflow-hidden max-md:fixed max-md:bottom-8 max-md:w-full max-md:overflow-hidden max-md:top-[auto] z-50 max-md:-translate-y-0">
         <div
-          className=" w-[96px] shadow-md bg-white/10 backdrop-blur-[3px] h-[460px] px-5 py-5 flex flex-col justify-between items-center max-md:flex-row text-2x1 text-white/60 max-md:w-full max-md:h-[96px]  max-md:max-w-[460px] max-md:mx-auto "
+          className=" w-[96px] max-md:shadow-md max-md:bg-white/10 max-md:backdrop-blur-[3px] h-[460px] px-5 py-5 flex flex-col justify-between items-center max-md:flex-row text-2x1 text-white/60 max-md:w-full max-md:h-[96px]  max-md:max-w-[460px] max-md:mx-auto "
           style={{ borderRadius: `${props.borderRadius}px` }}
         >
           <Link

@@ -178,7 +178,7 @@ const Home = (props) => {
                 title="image will replace"
                 src={Image}
                 alt="avatar"
-                className=" h-[320px] lg:max-w-[320px] w-[320px] rounded-full object-cover z-[100]"
+                className=" h-[320px] lg:max-w-[320px] w-[320px] rounded-full object-cover z-[100] btn"
               />
             </motion.div>
           </div>
