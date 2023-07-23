@@ -19,7 +19,6 @@ import Image4 from "./assets/bg4.jpg";
 import Image5 from "./assets/bg5.jpg";
 import Footer from "./components/Footer";
 
-
 const App = () => {
   const [open, setOpen] = React.useState(false);
   const showDrawer = () => {
@@ -41,7 +40,7 @@ const App = () => {
     color5: "#F99417",
   };
   //background
-  const [background, setBackground] = React.useState(Image1);
+  const [background, setBackground] = React.useState(Image5);
   const setBg1 = () => {
     setBackground(Image1);
   };
