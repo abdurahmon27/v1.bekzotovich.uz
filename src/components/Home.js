@@ -12,7 +12,7 @@ const Home = (props) => {
     gitHub: "https://instagram.com/_abdurakhmon._27",
     instagram: "https://github.com/abdurahmon27",
     linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
-    cv: "../assets/resume.pdf",
+    cv: "https://blog.bekzotovich.uz",
   };
   let blank = "_blank";
   return (
@@ -137,6 +137,7 @@ const Home = (props) => {
                     activeClass="notactive"
                     smooth={true}
                     spy={true}
+                    offset={30}
                   >
                     Contact me
                   </Link>
