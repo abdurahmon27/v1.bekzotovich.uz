@@ -131,6 +131,7 @@ const Home = (props) => {
                     backgroundColor: `${props.color}`,
                     borderRadius: `${props.borderRadius}px`,
                   }}
+                  
                 >
                   <Link
                     to="contact"

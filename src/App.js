@@ -124,7 +124,7 @@ const App = () => {
                     }}
                   >
                     <div
-                      className={`w-6 h-6 rounded-full`}
+                      className="w-6 h-6 rounded-full"
                       style={{ backgroundColor: `${colors.color1}` }}
                     ></div>
                   </li>
