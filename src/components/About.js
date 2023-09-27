@@ -25,7 +25,7 @@ const About = (props) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.3 }}
-              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[640px] mix-blend-lighten lg:bg-top max-lg:hidden"
+              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[520px] mix-blend-lighten lg:bg-top max-lg:hidden"
             ></motion.div>
             <motion.div
               variants={fadeIn("left", 0.5)}
@@ -96,6 +96,7 @@ const About = (props) => {
                 </button>
                 <a
                   href={cv}
+                  alt='resume'
                   download={cv}
                   className="text-gradient btn-lnk z-50"
                   style={{ color: `${props.color}` }}

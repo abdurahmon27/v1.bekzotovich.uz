@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/avatar4.jpg";
+import Image from "../assets/avatar6.jpg";
 //import Image2 from "../assets/avatar.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";

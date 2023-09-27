@@ -38,6 +38,7 @@ const Services = (props) => {
               viewport={{ once: false, amount: 0.3 }}
               className="flex-1 lg:bg-services btn lg:bg-bottom bg-no-repeat mix-blend-normal rounded-xl p-10 mr-5 mb-12 lg:mb-0"
             >
+              
               <h2 className="h2 mb-6" style={{ color: `${props.color}` }}>
                 What I Do.{" "}
               </h2>

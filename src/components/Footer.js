@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Image from "../assets/avatar6.jpg";
 
 const Footer = () => {
   const forHomeHref = {
@@ -31,9 +32,18 @@ const Footer = () => {
             rights reserved
           </pre>
         </div>
+        <div className="flex items-center justify-center mt-10">
+        <img
+                  src={Image}
+                  alt="blabla"
+                  className=" w-32 rounded-full mix-blend-lighten"
+                />
+        </div>
       </div>
     </section>
   );
 };
 
 export default Footer;
+
+//absolute bottom-2 right-3

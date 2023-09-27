@@ -5,6 +5,7 @@ import Image1 from "../assets/jizzaxGuide.png";
 import Image2 from "../assets/jizzaxGuide.png";
 import Image3 from "../assets/jizzaxGuide.png";
 
+
 const Work = (props) => {
   return (
     <div id="work" className="section">
