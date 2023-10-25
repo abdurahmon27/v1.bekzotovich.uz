@@ -7,7 +7,7 @@ const Contact = (props) => {
   const form = React.useRef();
   const [value, setValue] = React.useState("Send Message");
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     emailjs
       .sendForm(
         "service_hz6hmb8",

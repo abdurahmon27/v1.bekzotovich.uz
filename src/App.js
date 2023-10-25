@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 //Components
-import Home from "./components/Home";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import About from "./components/About";
-import Services from "./components/Services";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import Home from "./Components/Home";
+import Header from "./Components/Header";
+import Nav from "./Components/Nav";
+import About from "./Components/About";
+import Services from "./Components/Services";
+import Work from "./Components/Work";
+import Contact from "./Components/Contact";
 //Configuration
 import { IoSettings } from "react-icons/io5";
 import { Drawer } from "antd";
@@ -17,7 +17,7 @@ import Image2 from "./assets/bg1.jpg";
 import Image3 from "./assets/bg3.jpg";
 import Image4 from "./assets/bg4.jpg";
 import Image5 from "./assets/bg5.jpg";
-import Footer from "./components/Footer";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [open, setOpen] = React.useState(false);

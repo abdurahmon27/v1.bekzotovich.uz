@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/avatar6.jpg";
+import Image from "../assets/profile-pic.png";
 //import Image2 from "../assets/avatar.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 
 const Home = (props) => {
   const forHomeHref = {
-    gitHub: "https://instagram.com/_abdurakhmon._27",
+    gitHub: "https://instagram.com/devtipsmaster",
     instagram: "https://github.com/abdurahmon27",
     linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
     cv: "https://blog.bekzotovich.uz",
@@ -180,7 +180,7 @@ const Home = (props) => {
                 title="image will replace"
                 src={Image}
                 alt="avatar"
-                className=" h-[320px] lg:max-w-[320px] w-[320px] rounded-full object-cover z-[100] btn"
+                className=" h-[320px] lg:max-w-[320px] w-[320px] rounded-full object-cover z-[100] btn mix-blend-normal"
               />
             </motion.div>
           </div>

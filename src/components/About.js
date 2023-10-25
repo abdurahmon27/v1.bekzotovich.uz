@@ -20,13 +20,22 @@ const About = (props) => {
       <section className="section" id="about" ref={ref}>
         <div className="container mx-auto">
           <div className=" flex items-center justify-center max-md:flex-col gap-y-10 lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
-            <motion.div
-              variants={fadeIn("right", 0.3)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[520px] mix-blend-lighten lg:bg-top max-lg:hidden"
-            ></motion.div>
+          <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.3 }}
+          className="box max-lg:hidden">
+  <div className="box__line box__line--top max-lg:hidden"></div>
+  <div className="box__line box__line--right max-lg:hidden"></div>
+  <div className="box__line box__line--bottom max-lg:hidden"></div>
+  <div className="box__line box__line--left max-lg:hidden"></div>
+
+            <div
+              
+              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[520px] mix-blend-lighten lg:bg-top max-max-lg:hidden"
+            ></div>
+            </motion.div>
             <motion.div
               variants={fadeIn("left", 0.5)}
               initial="hidden"
