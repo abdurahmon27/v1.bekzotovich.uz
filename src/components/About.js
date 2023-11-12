@@ -21,7 +21,7 @@ const About = (props) => {
           variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="box max-lg:hidden">
   <div className="box__line box__line--top max-lg:hidden"></div>
   <div className="box__line box__line--right max-lg:hidden"></div>
@@ -37,7 +37,7 @@ const About = (props) => {
               variants={fadeIn("left", 0.5)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex-1"
             >
               <h2 className="h2" style={{ color: `${props.color}` }}>

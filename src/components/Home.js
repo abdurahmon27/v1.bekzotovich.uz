@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/profile-pic.png";
+import Image from "../assets/profilepic.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -27,7 +27,7 @@ const Home = (props) => {
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className="text-[35px] fontbolf mb-[20px] leading-[0.8] lg:text-[55px] pl-12 max-md:pl-0"
               >
                 Abdurahmon <span>Mamadiyorov</span>
@@ -37,7 +37,7 @@ const Home = (props) => {
                   variants={fadeIn("up", 0.45)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.7 }}
+                  viewport={{ once: true, amount: 0.7 }}
                   className="mb-6 text-[36px] btn lg:text-[30px] font-secondary font-semibold leading-for-home bg-white/10 p-3 w-[84%] flex items-center justify-center"
                   style={{ borderRadius: `${props.borderRadius}px` }}
                 >
@@ -69,7 +69,7 @@ const Home = (props) => {
                   variants={fadeIn("up", 0.45)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.7 }}
+                  viewport={{ once: true, amount: 0.7 }}
                   className="mb-6 text-[36px] btn lg:text-[30px] font-secondary font-semibold leading-[-1] bg-white/10 p-3 w-[84%] flex items-center"
                   style={{ borderRadius: `${props.borderRadius}px` }}
                 >
@@ -107,7 +107,7 @@ const Home = (props) => {
                 variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
                 The site is not ready yet. Some pages are under construction.
@@ -121,7 +121,7 @@ const Home = (props) => {
                 variants={fadeIn("up", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
                 <button
@@ -155,7 +155,7 @@ const Home = (props) => {
                 variants={fadeIn("up", 0.7)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 pl-[55px] max-md:pl-0"
               >
                 <a href={forHomeHref.gitHub} target={blank}>

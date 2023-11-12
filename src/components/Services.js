@@ -38,7 +38,7 @@ const Services = (props) => {
               variants={fadeIn("right", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex-1"
             >
               
@@ -86,7 +86,7 @@ const Services = (props) => {
               variants={fadeIn("left", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex-1 lg:bg-services btn lg:bg-bottom bg-no-repeat mix-blend-normal rounded-xl p-10 mr-5 mb-12 lg:mb-0"
             >
               
