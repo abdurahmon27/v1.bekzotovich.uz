@@ -6,8 +6,53 @@ import emailjs from "@emailjs/browser";
 const Contact = (props) => {
   const form = React.useRef();
   const [value, setValue] = React.useState("Send Message");
-  const sendEmail = (e) => {
-    e.preventDefault()
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form.current);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    try {
+      const response = await fetch("http://localhost:3001/send-message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error("Error sending form data to server:", error);
+    }
+
+    const telegramBotToken = "6376892053:AAHBqJ5I-RZKy4Qd57vXfIM5jS0tJv8CsMM";
+    const chatId = "@just_trying_messages";
+
+    try {
+      const telegramResponse = await fetch(
+        `https://api.telegram.org/bot${telegramBotToken}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: `New message from:\nName: ${data.user_name}\nEmail: ${data.user_email}\nMessage: ${data.message}`,
+          }),
+        }
+      );
+
+      const telegramResult = await telegramResponse.json();
+      console.log(telegramResult);
+    } catch (error) {
+      console.error("Error sending form data to Telegram:", error);
+    }
     emailjs
       .sendForm(
         "service_hz6hmb8",
@@ -23,14 +68,13 @@ const Contact = (props) => {
           console.log(error.text);
         }
       );
+
+    setValue("Sended");
+    setTimeout(() => {
+      setValue("Send Message");
+    }, 3000);
   };
 
-  const setTime = () => {
-    setValue("Sended")
-    setTimeout(() => {
-      setValue("Send Message")
-    }, 3000)
-  }
   return (
     <section id="contact" className="py-16 lg:section">
       <div className="container mx-auto">
@@ -63,10 +107,12 @@ const Contact = (props) => {
             style={{ border: `1px solid ${props.color}` }}
             ref={form}
             onSubmit={sendEmail}
+            action="http://localhost:3001/send-message"
+            method="POST"
           >
             <input
               className=" bg-transparent py-3 outline-none w-full placeholder:text-white transition-all px-3 focus:rounded-md"
-              style={{ borderBottom: `1px solid ${props.color}`}}
+              style={{ borderBottom: `1px solid ${props.color}` }}
               type="name"
               placeholder="Your name"
               name="user_name"
@@ -91,9 +137,6 @@ const Contact = (props) => {
               }}
               type="submit"
               className="btn btn-sm cursor-pointer"
-              onClick={
-                setTime
-              }
             >
               {value}
             </button>

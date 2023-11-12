@@ -10,9 +10,6 @@ const About = (props) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
-  const settingsStyle = {
-    
-  }
   const cv = resume;
   const channelLink = "https://t.me/abdurahmon_mamadiyorov";
   return (

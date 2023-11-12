@@ -230,3 +230,7 @@
 .box__line--right {
   right: -8px;
 }
+.leading-for-home
+{
+  line-height: -\1;
+}

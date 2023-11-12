@@ -11,8 +11,12 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.6.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "framer-motion": "^10.12.12",
     "i18next": "^23.2.11",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
@@ -29,7 +33,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-server": "concurrently \"npm run start\" \"npx nodemon server.js\""
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +55,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.3",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1",
     "tailwindcss": "^3.3.2"
   }
 }

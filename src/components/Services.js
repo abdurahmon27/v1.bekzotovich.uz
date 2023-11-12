@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Image from "../assets/avatar7.jpg";
+// import Image from "../assets/avatar7.jpg";
 
 const services = [
   {
