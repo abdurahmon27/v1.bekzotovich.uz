@@ -25,7 +25,7 @@ const Nav = (props) => {
             activeClass="active btn"
             smooth={true}
             spy={true}
-            offset={-5}
+            offset={-6}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center" style={{borderRadius: `${props.borderRadius}px`}}
           >
             <BiUser />
@@ -35,7 +35,7 @@ const Nav = (props) => {
             activeClass="active btn"
             smooth={true}
             spy={true}
-            offset={10}
+            offset={11}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center" style={{borderRadius: `${props.borderRadius}px`}}
           >
             <BsClipboardData />
@@ -55,7 +55,7 @@ const Nav = (props) => {
             activeClass="active"
             smooth={true}
             spy={true}
-            offset={30}
+            offset={35}
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center" style={{borderRadius: `${props.borderRadius}px`}}
           >
             <BsChatSquareDots />

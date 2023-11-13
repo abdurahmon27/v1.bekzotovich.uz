@@ -28,16 +28,16 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-center">
           <pre className="font-primary">
-            ©2023 <a href={"https://bekzotovich.uz"}>bekzotovich.uz </a> all
-            rights reserved
+            © 2023 <a href={"https://bekzotovich.uz"} className="font-bold">bekzotovich.uz.</a> All
+            rights reserved.
           </pre>
         </div>
         <div className="flex items-center justify-center mt-10">
-        <img
-                  src={Image}
-                  alt="blabla"
-                  className=" w-32 rounded-full mix-blend-lighten"
-                />
+          <img
+            src={Image}
+            alt="blabla"
+            className=" w-32 rounded-full mix-blend-lighten"
+          />
         </div>
       </div>
     </section>

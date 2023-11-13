@@ -110,12 +110,13 @@ const Home = (props) => {
                 viewport={{ once: true, amount: 0.7 }}
                 className="mb-8 max-w-lg mx-auto lg:mx-0 pl-12 max-md:pl-0"
               >
-                The site is not ready yet. Some pages are under construction.
-                The{" "}
+                My website is still a work in progress, with some pages
+                currently under construction. Excitingly, the{" "}
                 <a href="http://blog.bekzotovich.uz/" className="font-bold">
                   blog page
                 </a>{" "}
-                is also working now
+                is now up and running! 🚧✨ Stay tuned for more updates as I
+                continue to build and enhance the site. 🌐💻
               </motion.p>
               <motion.div
                 variants={fadeIn("up", 0.6)}
@@ -130,7 +131,6 @@ const Home = (props) => {
                     backgroundColor: `${props.color}`,
                     borderRadius: `${props.borderRadius}px`,
                   }}
-                  
                 >
                   <Link
                     to="contact"

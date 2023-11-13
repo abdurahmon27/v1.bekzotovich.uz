@@ -8,19 +8,19 @@ const services = [
   {
     name: "Frontend Development",
     description:
-      "In the frontend, I use JavaScript with the ReactJs library. As for CSS, I'm currently using TailwindCSS",
+      "In the frontend, I code with JavaScript and ReactJS for dynamic interfaces. Styling is done using Tailwind CSS. 💻🎨",
     link: "Learn more",
   },
   {
     name: "Software Engineering",
     description:
-      "I am studying software engineering at ITPU. I am currently working for a junior degree.",
+      "I'm a software engineering student at ITPU, striving towards my junior degree. 📚💻",
     link: "Learn more",
   },
   {
     name: "Videographing",
     description:
-      "I have 5 years of experience in videography. I have satisfied about 300 clients in videography.",
+      "With 5 years of videography experience, I've had the pleasure of satisfying around 300 clients. 🎥🌟",
     link: "Learn more",
   },
 ];
@@ -32,7 +32,7 @@ const Services = (props) => {
         <div className="container mx-auto">
           <div className="flex  flex-col lg:flex-row">
             {/* text */}
-          
+
             {/* services */}
             <motion.div
               variants={fadeIn("right", 0.5)}
@@ -41,46 +41,44 @@ const Services = (props) => {
               viewport={{ once: true, amount: 0.3 }}
               className="flex-1"
             >
-              
-                {services.map((service, index) => {
-                  const { name, description, link } = service;
-                  return (
-                    <div
-                      key={index}
-                      style={{ borderBottom: `1px solid ${props.color}` }}
-                      className="h-[146px] mb-[38px] flex"
-                    >
-                      <div className="max-w-[476px] ">
-                        <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
-                          {name}
-                        </h4>
-                        <p className=" font-secondary leading-tight">
-                          {description}
-                        </p>
-                      </div>
-                      <div className="flex flex-col flex-1 items-start justify-center">
-                        <a
-                          href={linkForA}
-                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center z-50"
-                          style={{
-                            backgroundColor: `${props.color}`,
-                            borderRadius: `${props.borderRadius}px`,
-                          }}
-                        >
-                          <BsArrowUpRight />
-                        </a>
-                        <a
-                          href={linkForA}
-                          style={{ color: `${props.color}` }}
-                          className="text-sm z-50"
-                        >
-                          {link}
-                        </a>
-                      </div>
+              {services.map((service, index) => {
+                const { name, description, link } = service;
+                return (
+                  <div
+                    key={index}
+                    style={{ borderBottom: `1px solid ${props.color}` }}
+                    className="h-[146px] mb-[38px] flex"
+                  >
+                    <div className="max-w-[476px] ">
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                        {name}
+                      </h4>
+                      <p className=" font-secondary leading-tight">
+                        {description}
+                      </p>
                     </div>
-                  );
-                })}
-              
+                    <div className="flex flex-col flex-1 items-start justify-center">
+                      <a
+                        href={linkForA}
+                        className="btn w-9 h-9 mb-[42px] flex justify-center items-center z-50"
+                        style={{
+                          backgroundColor: `${props.color}`,
+                          borderRadius: `${props.borderRadius}px`,
+                        }}
+                      >
+                        <BsArrowUpRight />
+                      </a>
+                      <a
+                        href={linkForA}
+                        style={{ color: `${props.color}` }}
+                        className="text-sm z-50"
+                      >
+                        {link}
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
             </motion.div>
             <motion.div
               variants={fadeIn("left", 0.3)}
@@ -89,7 +87,6 @@ const Services = (props) => {
               viewport={{ once: true, amount: 0.3 }}
               className="flex-1 lg:bg-services btn lg:bg-bottom bg-no-repeat mix-blend-normal rounded-xl p-10 mr-5 mb-12 lg:mb-0"
             >
-              
               <h2 className="h2 mb-6" style={{ color: `${props.color}` }}>
                 What I Do.{" "}
               </h2>

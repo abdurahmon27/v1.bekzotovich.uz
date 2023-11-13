@@ -17,21 +17,19 @@ const About = (props) => {
       <section className="section" id="about" ref={ref}>
         <div className="container mx-auto">
           <div className=" flex items-center justify-center max-md:flex-col gap-y-10 lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
-          <motion.div
-          variants={fadeIn("right", 0.3)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          className="box max-lg:hidden">
-  <div className="box__line box__line--top max-lg:hidden"></div>
-  <div className="box__line box__line--right max-lg:hidden"></div>
-  <div className="box__line box__line--bottom max-lg:hidden"></div>
-  <div className="box__line box__line--left max-lg:hidden"></div>
+            <motion.div
+              variants={fadeIn("right", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+              className="box max-lg:hidden"
+            >
+              <div className="box__line box__line--top max-lg:hidden"></div>
+              <div className="box__line box__line--right max-lg:hidden"></div>
+              <div className="box__line box__line--bottom max-lg:hidden"></div>
+              <div className="box__line box__line--left max-lg:hidden"></div>
 
-            <div
-              
-              className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[520px] mix-blend-lighten lg:bg-top max-max-lg:hidden"
-            ></div>
+              <div className="flex-1 lg:bg-about  lg:bg-contain bg-no-repeat lg:h-[520px] mix-blend-lighten lg:bg-top max-max-lg:hidden"></div>
             </motion.div>
             <motion.div
               variants={fadeIn("left", 0.5)}
@@ -48,10 +46,13 @@ const About = (props) => {
               </h3>
               <p className="mb-6">
                 <span>
+                  Follow my daily posts at{" "}
                   <a href={channelLink}>
-                    <b>t.me/abdurahmon_mamadiyorov</b> for daily posts.
-                  </a>
-                  {`Currently, I am a student at ITPU (IT Park University), which was opened together with IT Park and EPAM`}
+                    <b>t.me/abdurahmon_mamadiyorov</b>
+                  </a>{" "}
+                  📆📚 Currently, I'm a student at ITPU (IT Park University), a
+                  collaboration between IT Park and EPAM. Exciting times ahead!
+                  🚀🎓
                 </span>
               </p>
               <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -102,7 +103,7 @@ const About = (props) => {
                 </button>
                 <a
                   href={cv}
-                  alt='resume'
+                  alt="resume"
                   download={cv}
                   className="text-gradient btn-lnk z-50"
                   style={{ color: `${props.color}` }}

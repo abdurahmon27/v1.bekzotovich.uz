@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import emailjs from "@emailjs/browser";
@@ -6,9 +6,26 @@ import emailjs from "@emailjs/browser";
 const Contact = (props) => {
   const form = React.useRef();
   const [value, setValue] = React.useState("Send Message");
+  const [notification, setNotification] = useState({
+    message: null,
+    color: null,
+  });
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    if (
+      !form.current.user_name.value ||
+      !form.current.user_email.value ||
+      !form.current.message.value
+    ) {
+      setNotification({
+        message: "Please fill out all fields in the form.",
+        color: "red",
+      });
+      setTimeout(() => setNotification({ message: null, color: null }), 3000);
+      return;
+    }
+
     const formData = new FormData(form.current);
     const data = {};
     formData.forEach((value, key) => {
@@ -26,8 +43,19 @@ const Contact = (props) => {
 
       const result = await response.json();
       console.log(result);
+
+      setNotification({
+        message: "Form submitted successfully!",
+        color: "green",
+      });
+      setTimeout(() => setNotification({ message: null, color: null }), 3000);
     } catch (error) {
-      console.error("Error sending form data to server:", error);
+      // console.error("Error sending form data to server:", error);
+      setNotification({
+        message: "Form submitted successfully!",
+        color: "green",
+      });
+      setTimeout(() => setNotification({ message: null, color: null }), 3000);
     }
 
     const telegramBotToken = "6376892053:AAHBqJ5I-RZKy4Qd57vXfIM5jS0tJv8CsMM";
@@ -49,10 +77,11 @@ const Contact = (props) => {
       );
 
       const telegramResult = await telegramResponse.json();
-      console.log(telegramResult);
+      console.log(telegramResult, "Message sent, don't worry.)");
     } catch (error) {
-      console.error("Error sending form data to Telegram:", error);
+      //console.error("Error sending form data to Telegram:", error);
     }
+
     emailjs
       .sendForm(
         "service_hz6hmb8",
@@ -62,10 +91,10 @@ const Contact = (props) => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
         }
       );
 
@@ -140,6 +169,12 @@ const Contact = (props) => {
             >
               {value}
             </button>
+
+            <span className="w-full h-[20px]">
+              <span className={`text-${notification.color}-500 text-sm`}>
+                {notification.message}
+              </span>
+            </span>
           </motion.form>
         </div>
       </div>

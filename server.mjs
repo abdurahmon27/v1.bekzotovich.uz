@@ -29,7 +29,7 @@ const sendEmail = async (e) => {
         },
         body: JSON.stringify({
           chat_id: chatId,
-          text: `New message from:\nName: ${data.user_name}\nEmail: ${data.user_email}\nMessage: ${data.message}`,
+          text: `Yangi xabar:\nIsm: ${data.user_name}\nEmail: ${data.user_email}\nXabar: ${data.message}`,
         }),
       }
     );

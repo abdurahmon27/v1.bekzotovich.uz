@@ -5,7 +5,6 @@ import Image1 from "../assets/jizzaxGuide.png";
 import Image2 from "../assets/jizzaxGuide.png";
 import Image3 from "../assets/jizzaxGuide.png";
 
-
 const Work = (props) => {
   return (
     <div id="work" className="section">
@@ -25,10 +24,11 @@ const Work = (props) => {
               >
                 My Latest <br /> Work.
               </h2>
-              <p className="max-w-sm mb-16 text-[15px]">
-                Currently I am working on 3 big projects. I did not put them in
-                the portfolio for privacy.
-                Soon, InshaAllah, I will make a projects page for my portfolio.
+              <p className="max-w-sm mb-[2.5rem] text-[15px]">
+                Engaged in three significant projects at the moment, though not
+                featured in my portfolio for privacy reasons. InshaAllah, a
+                dedicated projects page is in the pipeline for the near future.
+                🚀🔒
               </p>
               <button
                 className="btn btn-sm z-50"
