@@ -234,3 +234,7 @@
 {
   line-height: -\1;
 }
+.text-null-500
+{
+  color: red;
+}
