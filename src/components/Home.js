@@ -10,7 +10,7 @@ const Home = (props) => {
   const forHomeHref = {
     gitHub: "https://instagram.com/devtipsmaster",
     instagram: "https://github.com/abdurahmon27",
-    linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov-23607525b/",
+    linkedIn: "https://www.linkedin.com/in/abdurahmon-mamadiyorov/",
     cv: "https://blog.bekzotovich.uz",
   };
   let blank = "_blank";
