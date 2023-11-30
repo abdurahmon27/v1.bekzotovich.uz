@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Image1 from "../assets/jizzaxGuide.png";
-import Image2 from "../assets/jizzaxGuide.png";
+import Image2 from "../assets/mindmingle.bekzotovich.uz.png";
 import Image3 from "../assets/jizzaxGuide.png";
 
 const Work = (props) => {
@@ -79,11 +79,12 @@ const Work = (props) => {
               />
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 lg:z-50">
                 <span style={{ color: `${props.color}` }}>
-                  Frontend Development
+                  Full Stack Development
                 </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 lg:z-50">
-                <span className="text-3x1 text-white">Jizzax Guide</span>
+                <span className="text-3x1 text-white">Mindmingle</span>
+                <span className="ml-3"><a href={"https://mindmingle.bekzotovich.uz"} target={"_blank"}>mindmingle.bekzotovich.uz</a></span>
               </div>
             </div>
             <div

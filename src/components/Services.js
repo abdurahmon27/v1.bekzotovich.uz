@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-// import Image from "../assets/avatar7.jpg";
+import {Link} from "react-scroll";
 
 const services = [
   {
@@ -100,7 +100,12 @@ const Services = (props) => {
                   borderRadius: `${props.borderRadius}px`,
                 }}
               >
-                See my work
+                <Link
+                    to="work"
+                    activeClass="notactive"
+                    smooth={true}
+                    spy={true}
+                >See my work </Link>
               </button>
             </motion.div>
           </div>
