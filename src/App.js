@@ -40,7 +40,7 @@ const App = () => {
     color5: "#F99417",
   };
   //background
-  const [background, setBackground] = React.useState(Image5);
+  const [background, setBackground] = React.useState(Image1);
   const setBg1 = () => {
     setBackground(Image1);
   };
